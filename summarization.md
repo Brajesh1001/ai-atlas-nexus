@@ -12,6 +12,22 @@ AI Atlas Nexus is an open-source governance toolkit for foundation-model systems
 - Export ontology data into graph databases for enterprise governance workflows.
 - Accelerate governance documentation and questionnaire workflows.
 
+## How to add your own taxonomy
+
+1. Add one or more YAML files to `src/ai_atlas_nexus/data/knowledge_graph/`.
+2. Ensure your entries follow the ontology schema documented at `docs/ontology/index.md`.
+3. Define risks/actions/taxonomies in YAML. Example:
+
+```yaml
+- id: my-own-risk
+  name: A very risky AI behaviour
+  description: An LLM-based system is often very risky
+  isDefinedByTaxonomy: my-taxonomy
+```
+
+4. (Optional) Add cross-taxonomy mappings in TSV format and run `make lift_mappings_from_tsv` to generate LinkML YAML mappings.
+5. Follow the full contribution guide for taxonomy files, mappings, and CoT templates: [Contributing a taxonomy](docs/concepts/Contributing_a_taxonomy.md).
+
 ## Example screenshots
 
 ### Architecture view
