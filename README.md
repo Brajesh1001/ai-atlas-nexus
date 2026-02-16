@@ -14,6 +14,18 @@ AI Atlas Nexus provides tooling to help bring together resources related to gove
 
 Our intention is to create a starting point for an open AI Systems ontology whose focus is on risk and that the community can extend and enhance. This ontology serves as the foundation that unifies innovation and tooling in the AI risk space. By lowering the barrier to entry for developers, it fosters a governance-first approach to AI solutions, while also inviting the broader community to contribute their own tools and methodologies to expand its impact.
 
+## Executive Summary
+
+AI Atlas Nexus is an open-source governance toolkit for foundation-model systems. It unifies AI risk taxonomies, actions, evaluations, and system metadata in one ontology-backed knowledge graph so teams can move from high-level governance requirements to concrete implementation tasks.
+
+## What this can be used for
+
+- Assess likely risks for a new AI use case and connect those risks to relevant dimensions and consequences.
+- Support governance and compliance workflows by mapping risks to controls, principles, and mitigation actions.
+- Identify related evaluations and benchmarks to validate AI systems against safety and quality expectations.
+- Export ontology data to graph databases (Cypher) for integration into enterprise governance platforms.
+- Accelerate questionnaire and documentation workflows using AI-assisted governance examples.
+
 ## Features
 
 - 🏗️ An ontology that combines the AI risk view (taxonomies, risks, actions) with an AI model view (AI systems, AI models, model evaluations) into one coherent schema
@@ -25,9 +37,15 @@ Our intention is to create a starting point for an open AI Systems ontology whos
 - ✨ Example use-case of auto-assistance in compliance questionnaires using CoT examples and AI Atlas Nexus
 - 🔧 Tooling to convert the LinkML schema and instance data into a Cypher representation to populate a graph database
 
-## Architecture
+## Example screenshots
+
+### Architecture view
 
 ![Architecture](https://github.com/IBM/ai-atlas-nexus/blob/main/resources/images/architecture.png?raw=true)
+
+### Risk taxonomy view
+
+![IBM AI Risk Atlas categories](https://github.com/IBM/ai-atlas-nexus/blob/main/docs/assets/ibm_ai_risk_atlas.png?raw=true)
 
 ## Links
 
@@ -47,6 +65,18 @@ Our intention is to create a starting point for an open AI Systems ontology whos
 - **Additional Resources:**
   - [IBM AI Risk Atlas](https://www.ibm.com/docs/en/watsonx/saas?topic=ai-risk-atlas)
   - [Usage Governance Advisor: From Intent to AI Governance](https://arxiv.org/abs/2412.01957)
+
+## Costs
+
+AI Atlas Nexus is licensed under Apache 2.0 and is free to use.
+
+Operational costs depend on your deployment choices:
+
+- **Inference usage costs:** Provider charges may apply when using hosted APIs (for example, Watsonx AI or other managed endpoints).
+- **Infrastructure costs:** Compute, storage, and database hosting for running local/self-hosted components (for example, Ollama or vLLM).
+- **Implementation costs:** Engineering effort to integrate AI Atlas Nexus into your governance workflows and enterprise systems.
+
+Teams can minimize API spend by using local inference setups, but this usually shifts cost toward infrastructure and operations management.
 
 ## Installation
 
