@@ -14,6 +14,18 @@ AI Atlas Nexus provides tooling to help bring together resources related to gove
 
 Our intention is to create a starting point for an open AI Systems ontology whose focus is on risk and that the community can extend and enhance. This ontology serves as the foundation that unifies innovation and tooling in the AI risk space. By lowering the barrier to entry for developers, it fosters a governance-first approach to AI solutions, while also inviting the broader community to contribute their own tools and methodologies to expand its impact.
 
+## Executive Summary
+
+AI Atlas Nexus is an ontology-driven knowledge graph and toolkit for AI governance. It normalizes risk taxonomies, actions, evaluations, and mappings so teams can query, export, and automate governance workflows. The library supports LLM-assisted risk identification and connects outputs to related mitigations, controls, and evaluations. It runs locally and can optionally use inference backends such as Ollama, WML, vLLM, or RITS.
+
+## What this can be used for
+
+- Identify governance risks from natural language use cases.
+- Crosswalk and map risks across different taxonomies.
+- Build governance reports that link risks to actions and evaluations.
+- Export the knowledge graph to formats such as YAML, OWL, Cypher, and JSON.
+- Extend the ontology with custom taxonomies and domain data.
+
 ## Features
 
 - 🏗️ An ontology that combines the AI risk view (taxonomies, risks, actions) with an AI model view (AI systems, AI models, model evaluations) into one coherent schema
@@ -28,6 +40,25 @@ Our intention is to create a starting point for an open AI Systems ontology whos
 ## Architecture
 
 ![Architecture](https://github.com/IBM/ai-atlas-nexus/blob/main/resources/images/architecture.png?raw=true)
+
+## Example screenshots
+
+Architecture overview:
+
+![Architecture overview](https://github.com/IBM/ai-atlas-nexus/blob/main/resources/images/architecture.png?raw=true)
+
+Risk Atlas Nexus logo:
+
+![Risk Atlas Nexus logo](https://github.com/IBM/ai-atlas-nexus/blob/main/resources/images/risk_atlas_nexus_vector.svg?raw=true)
+
+## Costs
+
+Costs depend on how you deploy and which inference backend you use:
+
+- LLM inference cost (local models vs. hosted APIs).
+- Compute and storage for exporting or hosting the knowledge graph.
+- Optional evaluation costs if you run benchmarks or external integrations.
+- You can control spend by limiting `max_risk`, using local models, and caching results.
 
 ## Links
 
